@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Properties</title>
+    <style>
+        .box1 {
+            background-color: #3366cc;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        .box2 {
+            border: 2px dashed brown;
+            color: red;
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3 {
+            background-color: black;
+            color: red;
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box4 {
+            background-color: orange;
+            color: red;
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            box-shadow: 10px 10px 5px #aaaaaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Padding with required properties for box-1
+    </div>
+    <div class="container">
+        <div class="box2">
+            Margin with required properties for box-2
+        </div>
+        <div class="box3">
+            Border with required properties for box-3
+        </div>
+        <div class="box4">
+            Shadow property required for box-4
+        </div>
+    </div>
+</body>
+</html>

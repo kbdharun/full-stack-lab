@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--Just a random comment-->
+<!--HTML5 Document created via VSCode on Windows-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello</title>
+    </head>
+    <body style="background-color: blanchedalmond" vlink="red">
+        <h1 style="color:blue">Working!</h1>
+        <h2>Live changes</h2>
+        <p>Test live<br>server</p>
+        <a href="https://www.sastra.edu">Just a random website</a><br>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7///8BEBAQEBEQEhQUEhkbGBsZJSIfHyIlOCgrKCsoOFU1PjU1PjVVS1tKRUpbS4dqXl5qh5yDfIOcvampve7i7v/////CABEIAC4ALgMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAABAUGAQP/2gAIAQEAAAAA34AcSQbYZXShe9epDxt/ylbejEz/AHUU+gB//8QAGAEAAwEBAAAAAAAAAAAAAAAAAgMEAAH/2gAKAgIQAxAAAADuMVlXM2ZFSWuBB//EACsQAAIBAwIFAwMFAAAAAAAAAAECAwAEERIhBRMiMVEQMkEVIDNSU2Jysf/aAAgBAQABPwDNM6qCzEADuTsBX1CEkBEkceVXakv4GODrQ+HGms1n0BWcGaQDlA5jU/6auuJSR/jx4Aq2u1nAWTBz8mk1RSiM7xt7P4kfHpdsVtpiDjbGf7bVJf2LRcqG5hd+wUN4pxCxJkkOofFWzKkg5bllG5zkYqfiFhJGVS6ieRSGCht+k+nEOfda+XtBACxf9bDxVwGt7hZwvSp3rVbXkbOHCS7dJBq8urayhkSF9beasIDpBI6mPc/GrAqxaWBTbXPSyexj2ZaKgjBAIriXCufrkhG7A6lqS3lRhzUUkfupk1DaTzAIseVzkKi4WrHhyW8bcwBncYPgCiAe4+//xAAeEQACAgICAwAAAAAAAAAAAAABAgARAyEQoRMiUv/aAAgBAgEBPwCFCFDVrjHgDKCW3cPsgSmvqZMIVLDXuI7IbE84+O4zMxsz/8QAIxEAAgAFAwUBAAAAAAAAAAAAAQIAAxESMRMhUQQQIiNCcv/aAAgBAwEBPwCA6litwuGR2E8tMdAuFqpP1CIy9Q8y5DWtB9b8xr+4yyNqDy4PEOgccEYIyIsm41RT87wqKgoI/9k=" alt="No photo" height="150" width="150" border="2"></img>
+        <br><img src="test.jpg" alt="No photo" height="150" width="150" border="2"></img>
+        <ol type="I">
+            <li>Carrot</li>
+            <li>Tomato</li>
+        </ol>
+        <ul type="disc">
+            <li>test</li>
+        </ul>
+        <dl>
+            <dt>Tuna</dt>
+            <dd>Just another fish dish.</dd>
+        </dl>
+        <form id="myform" action="www.sastra.edu" method="get">
+            First name:
+            <input type="text" name="firstname" id="firstname">
+            <br><br>
+            Last name:
+            <input type="text" name="lastname" id="lastname">
+        </form>
+        <h2>Login form</h2>
+        <form id="myform2" action="www.sastra.edu" method="get" autocomplete="on">
+            Username:<input type=text name="uname" id="uname">
+            <br><br>Pass:<input type="password" name="pwd" value="nopass" id="pwd" readonly>
+            <br><br>Email:<input type="email" value="1 gmail.com">
+            <br><br><input type="submit" value="submit">
+        </form><br>
+        <FORM id="myform" action="www.sastra.edu" method="get" onsubmit="return fun1()">
+            <select id="town" onchange="selTown()">
+                <option value="TNJ">Thanjavur</option>
+                <option value="TRY">Tiruchirapalli</option>
+            </select>
+        </FORM>
+    <fieldset style="width: 300px;">
+        <legend><h3>Login</h3></legend>
+        <p>
+            Username:<input type="text">
+        </p>
+        <p>
+            Password:<input type="password">
+        </p>
+        <input type="submit" id="submit" value="Submit" onclick="o">
+    </fieldset>
+    <section id="1" style="background-color: chocolate;width: 300px;">
+    <h2>HiStOrY</h2>
+    <p>The historical event occured in</p>
+    </section>
+    <figure align="center">
+
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABAQEBAREBIUFBIZGxgbGSUiHx8iJTgoKygrKDhVNT41NT41VUtbSkVKW0uHal5eaoecg3yDnL2pqb3u4u7///8BEBAQEBEQEhQUEhkbGBsZJSIfHyIlOCgrKCsoOFU1PjU1PjVVS1tKRUpbS4dqXl5qh5yDfIOcvampve7i7v/////CABEIAC4ALgMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAABAUGAQP/2gAIAQEAAAAA34AcSQbYZXShe9epDxt/ylbejEz/AHUU+gB//8QAGAEAAwEBAAAAAAAAAAAAAAAAAgMEAAH/2gAKAgIQAxAAAADuMVlXM2ZFSWuBB//EACsQAAIBAwIFAwMFAAAAAAAAAAECAwAEERIhBRMiMVEQMkEVIDNSU2Jysf/aAAgBAQABPwDNM6qCzEADuTsBX1CEkBEkceVXakv4GODrQ+HGms1n0BWcGaQDlA5jU/6auuJSR/jx4Aq2u1nAWTBz8mk1RSiM7xt7P4kfHpdsVtpiDjbGf7bVJf2LRcqG5hd+wUN4pxCxJkkOofFWzKkg5bllG5zkYqfiFhJGVS6ieRSGCht+k+nEOfda+XtBACxf9bDxVwGt7hZwvSp3rVbXkbOHCS7dJBq8urayhkSF9beasIDpBI6mPc/GrAqxaWBTbXPSyexj2ZaKgjBAIriXCufrkhG7A6lqS3lRhzUUkfupk1DaTzAIseVzkKi4WrHhyW8bcwBncYPgCiAe4+//xAAeEQACAgICAwAAAAAAAAAAAAABAgARAyEQoRMiUv/aAAgBAgEBPwCFCFDVrjHgDKCW3cPsgSmvqZMIVLDXuI7IbE84+O4zMxsz/8QAIxEAAgAFAwUBAAAAAAAAAAAAAQIAAxESMRMhUQQQIiNCcv/aAAgBAwEBPwCA6litwuGR2E8tMdAuFqpP1CIy9Q8y5DWtB9b8xr+4yyNqDy4PEOgccEYIyIsm41RT87wqKgoI/9k=">
+        
+        <figcaption>Fig.1 Flowchar for Sum of N numbers</figcaption>
+        
+        </figure>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: #00aaff;
+            border: 3px double #000;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .form-container th {
+            text-align: center;
+            background-color: #ffff00;
+            color: red;
+            padding: 10px;
+            font-size: 24px;
+            border: 1px solid black;
+        }
+        .form-container td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .form-container input[type="text"], 
+        .form-container input[type="password"], 
+        .form-container input[type="file"], 
+        .form-container select, 
+        .form-container textarea {
+            width: calc(100% - 22px); /* Adjusted to fit within double border */
+            padding: 5px;
+            margin: 0;
+            border: 1px solid #000;
+        }
+        .form-container input[type="radio"],
+        .form-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid #000;
+            cursor: pointer;
+            font-size: 16px;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .button-container button:first-child,
+        .button-container button:last-child {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2">Registration Form</th>
+                </tr>
+                <tr>
+                    <td>Enter Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Enter Address</td>
+                    <td><textarea name="address" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select Game</td>
+                    <td>
+                        <input type="checkbox" id="hockey" name="game" value="Hockey">
+                        <label for="hockey">Hockey</label><br>
+                        <input type="checkbox" id="football" name="game" value="Football">
+                        <label for="football">Football</label><br>
+                        <input type="checkbox" id="badminton" name="game" value="Badminton">
+                        <label for="badminton">Badminton</label><br>
+                        <input type="checkbox" id="cricket" name="game" value="Cricket">
+                        <label for="cricket">Cricket</label><br>
+                        <input type="checkbox" id="volleyball" name="game" value="Volleyball">
+                        <label for="volleyball">Volleyball</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select your age</td>
+                    <td>
+                        <select name="age">
+                            <option value="select">Select</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Photo</td>
+                    <td><input type="file" name="photo"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="button-container">
+                            <button type="button">Click Me</button>
+                            <button type="reset">Reset</button>
+                            <button type="submit">Submit Form</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

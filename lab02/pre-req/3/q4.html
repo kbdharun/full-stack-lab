@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favourite Food Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3366cc;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 100%;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        .dropdown-content a:hover {
+            background-color: #1e4a8a;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #1e4a8a;
+        }
+        .dropbtn {
+            background-color: #3366cc;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown" style="width: 200px;">
+        <button class="dropbtn">Favourite food</button>
+        <div class="dropdown-content">
+            <a href="#">Food1</a>
+            <a href="#">Food2</a>
+            <a href="#">Food3</a>
+            <a href="#">Food4</a>
+            <a href="#">Food5</a>
+        </div>
+    </div>
+</body>
+</html>

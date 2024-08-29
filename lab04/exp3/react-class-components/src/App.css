@@ -1,0 +1,12 @@
+.App {
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Add some padding */
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px; /* Add some padding to the left of the list */
+}

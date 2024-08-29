@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Schedule</title>
+    <style>
+        table {
+            border: 5px double;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 5px double; /* Border for cells */
+            padding: 10px;
+            text-align: center;
+        }
+        .day-cell {
+            text-align: left;
+        }
+        .yellow {
+            background-color: #dfd581; /* Yellow background */
+        }
+        .aqua {
+            background-color: #9ae7d4; /* Aqua background */
+        }
+        .purple {
+            background-color: #daabe2; /* Purple background */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Monday Row -->
+            <tr>
+                <td class="day-cell" rowspan="2">Monday</td>
+                <td class="yellow" rowspan="2">8:00 a.m.</td>
+                <td class="purple" rowspan="2">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <!-- Tuesday Rows -->
+            <tr>
+                <td class="day-cell" rowspan="3">Tuesday</td>
+                <td class="yellow">8:00 a.m.</td>
+                <td class="yellow">11:00 a.m.</td>
+                <td style="vertical-align: middle;">XPath</td>
+            </tr>
+            <tr>
+                <td class="yellow">11:00 a.m.</td>
+                <td class="aqua">2:00 p.m.</td>
+                <td style="vertical-align: middle;">XSL Transformations</td>
+            </tr>
+            <tr>
+                <td class="aqua">2:00 p.m.</td>
+                <td class="purple">5:00 p.m.</td>
+            </tr>
+            <!-- Wednesday Row -->
+            <tr>
+                <td class="day-cell">Wednesday</td>
+                <td class="yellow">8:00 a.m.</td>
+                <td class="aqua">12:00 p.m.</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

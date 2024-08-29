@@ -1,0 +1,29 @@
+PS E:\125156030\Full Stack\lab4\JS-ES6> node index.js
+All Sensors: [
+  Sensor {
+    id: '1',
+    type: 'temperature',
+    value: 22.5,
+    location: 'living room'
+  },
+  Sensor { id: '2', type: 'humidity', value: 55, location: 'bedroom' },
+  Sensor { id: '3', type: 'light', value: 300, location: 'kitchen' }
+]
+Type: temperature, Value: 22.5, Location: living room
+Filtered Sensors (type: temperature): [
+  Sensor {
+    id: '1',
+    type: 'temperature',
+    value: 22.5,
+    location: 'living room'
+  }
+]
+All Sensors after removal: [
+  Sensor {
+    id: '1',
+    type: 'temperature',
+    value: 22.5,
+    location: 'living room'
+  },
+  Sensor { id: '3', type: 'light', value: 300, location: 'kitchen' }
+]

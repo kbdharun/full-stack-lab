@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index Example</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.blue-box {
+    width: 60%;
+    height: 60%;
+    background-color: blue;
+    z-index: 1;
+    left: 0;
+}
+
+.orange-box {
+    width: 40%;
+    height: 40%;
+    background-color: orange;
+    z-index: 2;
+    right: 20%;
+}
+
+.black-box {
+    width: 40%;
+    height: 40%;
+    background-color: black;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box blue-box">Z1</div>
+        <div class="box orange-box">Z2</div>
+        <div class="box black-box">Z3</div>
+    </div>
+</body>
+</html>

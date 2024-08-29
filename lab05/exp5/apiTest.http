@@ -1,0 +1,40 @@
+### This File needs humao.rest-client extension to be installed
+
+### Get all books
+GET http://localhost:3000/books
+Accept: application/json
+
+###
+
+### Get a book by ID
+GET http://localhost:3000/books/1
+Accept: application/json
+
+###
+
+### Add a new book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "Book Three",
+  "author": "Author Three",
+  "year": 2003
+}
+
+###
+
+### Update a book by ID
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "title": "Updated Book",
+  "author": "Updated Author",
+  "year": 2001
+}
+
+###
+
+### Delete a book by ID
+DELETE http://localhost:3000/books/1

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.header {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+label {
+    color: #ffcc00;
+    display: block;
+    margin: 5px 0 3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 3px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dob select {
+    width: 30%;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.dob select:last-child {
+    margin-right: 0;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.gender label {
+    color: #ffcc00;
+    margin: 0 5px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.terms label {
+    color: #ffcc00;
+    margin-left: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    background-color: orange;
+}
+
+.submit,
+.cancel {
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.cancel {
+    background-color: red;
+}
+
+.submit{
+    background-color: green;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <div class="header">Sign Up</div>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" required>
+
+            <label for="dob">Date of Birth</label>
+            <div class="dob">
+                <select id="date" name="date" required>
+                    <option value="" disabled selected>Date</option>
+                    <!-- Add date options here -->
+                </select>
+                <select id="month" name="month" required>
+                    <option value="" disabled selected>Month</option>
+                    <!-- Add month options here -->
+                </select>
+                <select id="year" name="year" required>
+                    <option value="" disabled selected>Year</option>
+                    <!-- Add year options here -->
+                </select>
+            </div>
+
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Country</option>
+                <!-- Add country options here -->
+            </select>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Enter E-mail" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Phone" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I Agree to the Terms of use</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="submit">Submit</button>
+                <button type="button" class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

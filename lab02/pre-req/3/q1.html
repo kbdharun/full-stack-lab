@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  #box1 {
+    background-color: blue;
+    position: relative;
+    left: 0; /* Default position */
+  }
+
+  #box2 {
+    background-color: orange;
+    position: relative;
+    left: 50px; /* Move 50px to the right */
+  }
+
+  #box3 {
+    background-color: black;
+    position: relative;
+    left: 100px; /* Move 100px to the right */
+  }
+</style>
+</head>
+<body>
+  <div class="box-container">
+    <div id="box1" class="box">B1</div>
+    <div id="box2" class="box">B2</div>
+    <div id="box3" class="box">B3</div>
+  </div>
+</body>
+</html>
